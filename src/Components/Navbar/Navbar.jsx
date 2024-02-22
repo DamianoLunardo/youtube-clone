@@ -8,11 +8,11 @@ import more_icon from '../../assets/more.png'
 import notification_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/jack.png'
 
-const App = () => {
+const Navbar = ({setSidebar}) => {
   return (
     <nav className='flex-div'>
         <div className='nav-left flex-div'>
-            <img className='menu-icon' src= { menu_icon }  alt="menu"></img>
+            <img className='menu-icon' onClick={() => setSidebar(prev=>prev===false ? true : false)} src= { menu_icon }  alt="menu"></img>
             <img className='logo' src= { logo } alt="logo"></img>
         </div>
 
@@ -34,4 +34,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Navbar

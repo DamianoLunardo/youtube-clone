@@ -21,47 +21,47 @@ const Sidebar = ({sidebar, category, setCategory}) => {
     return (
         <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(0)}>
+                <div className={`side-link ${category === 0 ? "active" : ""}`} onClick={()=>setCategory(0)}>
                     <img src= { home } alt="home" /> <p>Home</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(20)}>
+                <div className={`side-link ${category === 20 ? "active" : ""}`} onClick={()=>setCategory(20)}>
                     <img src= { game_icon } alt="home" /> <p>Gaming</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(2)}>
+                <div className={`side-link ${category === 2 ? "active" : ""}`} onClick={()=>setCategory(2)}>
                     <img src= { automobiles } alt="home" /> <p>Automobiles</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(17)}>
+                <div className={`side-link ${category === 17 ? "active" : ""}`} onClick={()=>setCategory(17)}>
                     <img src= { sports } alt="home" /> <p>Sports</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(24)}>
+                <div className={`side-link ${category === 24 ? "active" : ""}`} onClick={()=>setCategory(24)}>
                     <img src= { entertainment } alt="home" /><p>Entertainment</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(28)}>
+                <div className={`side-link ${category === 28 ? "active" : ""}`} onClick={()=>setCategory(28)}>
                     <img src= { tech } alt="home" /> <p>Tecnology</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(10)}>
+                <div className={`side-link ${category === 10 ? "active" : ""}`} onClick={()=>setCategory(10)}>
                     <img src= { music } alt="home" /> <p>Music</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(21)}>
+                <div className={`side-link ${category === 21 ? "active" : ""}`}onClick={()=>setCategory(21)}>
                     <img src= { blogs } alt="home" /> <p>Blogs</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link" onClick={()=>setCategory(25)}>
+                <div className={`side-link ${category === 25 ? "active" : ""}`} onClick={()=>setCategory(25)}>
                     <img src= { news } alt="home" /> <p>News</p>
                 </div>
                 <hr />

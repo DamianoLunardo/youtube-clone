@@ -5,7 +5,7 @@ import game_icon from '../../assets/game_icon.png'
 import automobiles from '../../assets/automobiles.png'
 import sports from '../../assets/sports.png'
 import music from '../../assets/music.png'
-// import entertrainment from '../../assets/entertrainment.png'
+import entertainment from '../../assets/entertainment.png'
 import tech from '../../assets/tech.png'
 import blogs from '../../assets/blogs.png'
 import news from '../../assets/news.png'
@@ -17,51 +17,51 @@ import cameron from '../../assets/cameron.png'
 
 
 
-const Sidebar = ({sidebar}) => {
+const Sidebar = ({sidebar, category, setCategory}) => {
     return (
         <div className={`sidebar ${sidebar ? "" : "small-sidebar"}`}>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(0)}>
                     <img src= { home } alt="home" /> <p>Home</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(20)}>
                     <img src= { game_icon } alt="home" /> <p>Gaming</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(2)}>
                     <img src= { automobiles } alt="home" /> <p>Automobiles</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(17)}>
                     <img src= { sports } alt="home" /> <p>Sports</p>
                 </div>
             </div>
-            {/* <div className="sortcut-links">
-                <div className="side-link">
-                    <img src= { entertrainment } alt="home" /><p>Entertrainment</p>
-                </div>
-            </div> */}
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(24)}>
+                    <img src= { entertainment } alt="home" /><p>Entertainment</p>
+                </div>
+            </div>
+            <div className="sortcut-links">
+                <div className="side-link" onClick={()=>setCategory(28)}>
                     <img src= { tech } alt="home" /> <p>Tecnology</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(10)}>
                     <img src= { music } alt="home" /> <p>Music</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(21)}>
                     <img src= { blogs } alt="home" /> <p>Blogs</p>
                 </div>
             </div>
             <div className="sortcut-links">
-                <div className="side-link">
+                <div className="side-link" onClick={()=>setCategory(25)}>
                     <img src= { news } alt="home" /> <p>News</p>
                 </div>
                 <hr />

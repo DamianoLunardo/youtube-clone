@@ -1,8 +1,9 @@
 .play-video {
     flex-basis: 69%;
+    margin-right: 10px;
 }
 
-.play-video {
+.play-video video {
     width: 100%;
 }
 

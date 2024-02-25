@@ -55,11 +55,11 @@ const Sidebar = ({sidebar, category, setCategory}) => {
                     <img src= { music } alt="home" /> <p>Music</p>
                 </div>
             </div>
-            <div className="sortcut-links">
+            {/* <div className="sortcut-links">
                 <div className={`side-link ${category === 21 ? "active" : ""}`}onClick={()=>setCategory(21)}>
                     <img src= { blogs } alt="home" /> <p>Blogs</p>
                 </div>
-            </div>
+            </div> */}
             <div className="sortcut-links">
                 <div className={`side-link ${category === 25 ? "active" : ""}`} onClick={()=>setCategory(25)}>
                     <img src= { news } alt="home" /> <p>News</p>
